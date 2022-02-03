@@ -1,6 +1,10 @@
 
 const discord = require("discord.js");
 const client = new discord.Client({ disabledEvents: ["TYPING_START"] });
+const path = require("path");
+const pathToFfmpeg = require("avconv");
+const { OpusEncoder } = require("@discordjs/opus");
+const fs = require("fs");
 const ytdl = require("ytdl-core");
 const queue = new Map();
 
