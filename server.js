@@ -1,6 +1,5 @@
-
 const discord = require("discord.js");
-const client = new discord.Client({ disabledEvents: ["TYPING_START"] });
+const client = new discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
 const path = require("path");
 const pathToFfmpeg = require("avconv");
 const { OpusEncoder } = require("@discordjs/opus");
@@ -361,4 +360,4 @@ function play(guild, song) {
     serverQueue.textChannel.send("`" + song.title + "`を再生しています");
 };
 
-client.login("ODk0ODE2NDMzODA3MTcxNjA2.YVvgvg.7qh1xHVS5lGSJaolC85QbYSW4oU").catch(console.error);
+client.login().catch(console.error);
