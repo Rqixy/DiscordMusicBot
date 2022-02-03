@@ -361,4 +361,4 @@ function play(guild, song) {
     serverQueue.textChannel.send("`" + song.title + "`を再生しています");
 };
 
-client.login("ODk0ODE2NDMzODA3MTcxNjA2.YVvgvg.7qh1xHVS5lGSJaolC85QbYSW4oU").catch(console.error);
+client.login().catch(console.error);
