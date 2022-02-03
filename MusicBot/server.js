@@ -357,4 +357,4 @@ function play(guild, song) {
     serverQueue.textChannel.send("`" + song.title + "`を再生しています");
 };
 
-client.login("ODk0ODE2NDMzODA3MTcxNjA2.YVvgvg.ctnRS4JZi4B8198DxWv_jhmpARA");
+client.login("addtoken");
